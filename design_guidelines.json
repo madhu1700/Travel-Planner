@@ -1,0 +1,172 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Anti-AI Designer",
+    "vibe": "Organic, Earthy, Editorial, Travel-Themed",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is King",
+      "Zoom In",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "theme": {
+    "mode": "light",
+    "archetype": "Organic & Earthy",
+    "emotional_goal": "Wanderlust, Trust, Clarity, Excitement"
+  },
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "Playfair Display, serif",
+        "weights": ["400", "600", "700"],
+        "usage": "All H1-H3 headings. Use italic variant for emphasis words."
+      },
+      "body": {
+        "family": "DM Sans, sans-serif",
+        "weights": ["400", "500", "700"],
+        "usage": "Body text, UI elements, buttons, inputs."
+      },
+      "accent": {
+        "family": "Caveat, cursive",
+        "weights": ["400"],
+        "usage": "Small annotations, 'handwritten' notes on the itinerary."
+      }
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl tracking-tight leading-[1.1]",
+      "h2": "text-4xl md:text-5xl tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl tracking-normal",
+      "body-lg": "text-lg md:text-xl leading-relaxed",
+      "body": "text-base leading-relaxed",
+      "caption": "text-sm text-muted-foreground tracking-wide uppercase"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#0F4C5C",
+        "foreground": "#FFFFFF",
+        "description": "Deep Teal - Represents the ocean and depth. Use for primary buttons, active states, and key branding."
+      },
+      "secondary": {
+        "DEFAULT": "#E36414",
+        "foreground": "#FFFFFF",
+        "description": "Sunset Orange - Represents adventure and warmth. Use sparingly for high-priority CTAs (e.g., 'Generate Itinerary')."
+      },
+      "accent": {
+        "DEFAULT": "#97D8C4",
+        "foreground": "#0F4C5C",
+        "description": "Mint Foam - Soft, fresh accent. Use for success states, highlights, or decorative backgrounds."
+      },
+      "background": {
+        "DEFAULT": "#FAFAF9",
+        "description": "Warm Stone - A soft, organic off-white. Never use pure #FFFFFF for the main page background."
+      },
+      "card": {
+        "DEFAULT": "#FFFFFF",
+        "foreground": "#2D3748"
+      },
+      "muted": {
+        "DEFAULT": "#F0F1F3",
+        "foreground": "#718096"
+      },
+      "border": {
+        "DEFAULT": "#E2E8F0"
+      }
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-b from-[#0F4C5C]/10 to-transparent",
+      "card-hover": "bg-gradient-to-br from-white to-[#FAFAF9]"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "section": "py-20 md:py-32",
+      "element": "space-y-6 or gap-6"
+    },
+    "radius": {
+      "default": "0.75rem",
+      "button": "9999px",
+      "card": "1rem"
+    },
+    "grids": {
+      "bento": "grid grid-cols-1 md:grid-cols-3 gap-6",
+      "timeline": "flex flex-col space-y-8 relative border-l-2 border-primary/20 ml-4 pl-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full px-8 py-6 text-lg font-medium",
+      "secondary": "bg-white text-primary border-2 border-primary/10 hover:border-primary/30 hover:bg-primary/5 rounded-full px-8 py-6 text-lg font-medium",
+      "cta": "bg-secondary text-white hover:bg-secondary/90 shadow-orange-500/20 shadow-lg hover:shadow-orange-500/40 hover:-translate-y-1 transition-all duration-300 rounded-full px-10 py-4 text-xl font-bold"
+    },
+    "cards": {
+      "base": "bg-white rounded-2xl border border-border/50 shadow-[0_2px_10px_-2px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_-5px_rgba(0,0,0,0.1)] transition-all duration-300",
+      "interactive": "cursor-pointer hover:border-primary/50 hover:ring-2 hover:ring-primary/5"
+    },
+    "inputs": {
+      "base": "bg-white border-border focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-xl h-12 px-4 transition-all"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle grain overlays (opacity 0.03) on solid backgrounds to avoid 'digital flatness'.",
+    "glassmorphism": "backdrop-blur-xl bg-white/70 border border-white/20 shadow-sm",
+    "motion": {
+      "hover": "transition-all duration-300 ease-out hover:-translate-y-1",
+      "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-700"
+    }
+  },
+  "assets": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px. Use 'MapPin', 'Calendar', 'Compass', 'Sun', 'Moon', 'Coffee' for itinerary items."
+    },
+    "images": {
+      "strategy": "Since image selector failed, use high-quality Unsplash images manually or placeholders.",
+      "placeholders": [
+        {
+          "category": "hero",
+          "description": "Wide shot of a traveler looking at a mountain range or ocean sunset. Inspiring, vast.",
+          "alt": "Traveler overlooking a scenic landscape"
+        },
+        {
+          "category": "social",
+          "description": "Group of friends laughing at a dinner table outdoors or hiking together. Candid, warm.",
+          "alt": "Friends enjoying a trip together"
+        },
+        {
+          "category": "decorative",
+          "description": "Flatlay of travel essentials: camera, map, passport, sunglasses. Minimalist.",
+          "alt": "Travel planning essentials"
+        }
+      ]
+    }
+  },
+  "instructions_to_main_agent": {
+    "setup": [
+      "Install fonts: 'Playfair Display', 'DM Sans', 'Caveat' via Google Fonts.",
+      "Configure Tailwind theme with the colors and radius defined above.",
+      "Install 'lucide-react' for icons.",
+      "Install 'framer-motion' for smooth transitions."
+    ],
+    "implementation_rules": [
+      "DO NOT use default Shadcn styling. Override radius to '0.75rem' and use the 'Organic' color palette.",
+      "For the Itinerary Timeline: Use a vertical line on the left. Each 'Day' is a section. Each 'Activity' is a card connected to the line.",
+      "For the Form: Split it into 3 steps: 1. Basics (Where/When), 2. Vibe (Who/Style), 3. Specifics (Hectic/Interests). Do not show a giant wall of inputs.",
+      "Use the 'Caveat' font for small 'AI suggestions' or 'Travel Tips' that appear like sticky notes.",
+      "Ensure the 'Login with Google' button is prominent on the Landing Page, styled as a white card with the Google logo and 'Continue with Google' text."
+    ]
+  },
+  "universal_guidelines": [
+    "Avoid 'AI Slop': No generic gradients, no centered text blocks without hierarchy.",
+    "Dark colors look good when used independently without gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable."
+  ]
+}
